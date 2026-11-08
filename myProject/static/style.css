@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    background-color: #414141;
+    color:blueviolet;
+}
+body{
+    color: blueviolet;
+    text-align: center;
+    text-decoration: line-through;
+}
