@@ -1,16 +1,11 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: violet;
+   
     color: white;
 
 }
 body{
-    background-color: blue;
-    color: white;
-
-}
-h1{
-    background-color: burlywood;
-    color: beige;
+    text-align: center;
+    background-color: rgb(45, 13, 97);
 }
