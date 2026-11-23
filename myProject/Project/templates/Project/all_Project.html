@@ -1,5 +1,31 @@
 {% extends "layout.html" %}
 
-{% block content %}
-<h1>Hello this is /Project</h1>
+{% block title %}
+Hello Page
 {% endblock %}
+
+
+{% block content %}
+<h1>Hello this is /Project hueee</h1>
+
+<div class="grid grid-cols-3 gap-4 m-4">
+{% for food in foods %}
+<div class="bg-blue-900 p-5 rounded">
+    <img class="rounded shadow-lg" src="{{food.image.url}}" alt="">
+    <h3>{{food.name}}</h3>
+    <a href="#">
+        <button
+        type="button"
+        class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-orange-900 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 "
+        >
+            {{food.type}}-{{food.id}}
+        </button>
+    </a>
+</div>
+
+{% endfor %}
+
+</div>
+{% endblock %}
+
+
