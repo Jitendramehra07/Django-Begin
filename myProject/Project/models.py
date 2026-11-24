@@ -16,6 +16,8 @@ class FoodVariety(models.Model):
     #we also need third party plug-in for images...
     date = models.DateTimeField(default=timezone.now)
     type = models.CharField(max_length=2,choices=FOOD_TYPE_CHOICE)
+    description = models.TextField(default='')
+    pricing = models.AnyValue()
 
     def __str__(self):
         return str(self.name)
