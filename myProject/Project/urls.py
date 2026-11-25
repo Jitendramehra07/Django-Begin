@@ -8,4 +8,6 @@ urlpatterns = [
     path('',views.all_Project,name="all_Project"),
     #path('order/',views.order,name="order"),
 
+
+    path('<int:food_id>/',views.food_detail,name="food_detail"),
 ]

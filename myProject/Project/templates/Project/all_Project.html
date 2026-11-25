@@ -13,7 +13,7 @@ Hello Page
 <div class="bg-blue-900 p-5 rounded">
     <img class="rounded shadow-lg" src="{{food.image.url}}" alt="">
     <h3>{{food.name}}</h3>
-    <a href="#">
+    <a href="{% url 'food_detail' food.id %}">
         <button
         type="button"
         class="inline-flex items-center w-[100%] justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-orange-900 hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 "
