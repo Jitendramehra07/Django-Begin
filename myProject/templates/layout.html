@@ -6,16 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    {% block title %}
+    {% comment %} {% block title %}
     Default Value
-    {% endblock %}
+    {% endblock %} {% endcomment %}
+    {% comment %} {% block title %}
+    Default Value
+    {% endblock %} {% endcomment %}
     <link rel="stylesheet" href="{% static 'style.css' %}">
     {% tailwind_css %}
 </head>
 <body id="page">
-    <nav>This is our Navbar</nav>
+   {% block navbar %}
+      <nav>This is our Navbar</nav>
+   {% endblock %}
     
-    {% block content %}{% endblock %}
+    {% block content  %}
+     content block 
+    {% endblock %}
     
 </body>
 </html>

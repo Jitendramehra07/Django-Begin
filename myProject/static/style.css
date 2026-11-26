@@ -12,3 +12,9 @@
 :root:not([data-theme]) {
     background-color: rgb(59, 59, 130);
 }
+nav{
+    height: 10%;
+    width: 10%;
+    text-align: left;
+    text-decoration: wavy;
+}

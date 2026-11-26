@@ -1,14 +1,26 @@
 {% extends "layout.html" %}
 
-{% block title %}
-Food Details Page
-{% endblock %}
+
+ {% block navbar %}  
+  <nav class="w-full -mx-8 text-white px-8 py-4 shadow-md flex items-center justify-start gap-8 bg-purple-500">
+     <a href="#" class="whitespace-nowrap font-medium tracking-wide hover:text-indigo-300 transition-colors duration-200">Home</a>
+     <a href="#" class=" whitespace-nowrap font-medium tracking-wide hover:text-indigo-300 transition-colors duration-200">Contact Us</a>
+     <a href="#" class="whitespace-nowrap font-medium tracking-wide hover:text-indigo-300 transition-colors duration-200">Help Desk</a>
+   </nav>
+ {% endblock %}
+
+ 
+  {% block title  %}
+ Food Details Page
+ {% endblock %}
 
 {% block content %}
 <h1>Our Food Details</h1>
 
-<h3>{{ food.name }}</h3>
+<h3 >{{ food.name }}</h3>
 <p>{{ food.description }}</p>
 <p>{{ food.date }}</p>
 <p>{{food.type}}</p>
 {% endblock %}
+<div class="">
+  
